@@ -3,41 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz Example</title>
+    <title>Quiz</title>
     <link rel="stylesheet" href="style.css/style.css">
 </head>
 <body>
     <div class="container">
         <h2>In web design,what does CSS stand for ?</h2>
-        <div class="options">
-            <button class="btn">A</button><button class="optionbutton red" onclick="red()" >Counter:Strike:Source    </input>
-            </button><br>
-            <button class="btn">B<button class="optionbutton red1" onclick="red1()" >Corrective Style Sheet  </button><br>
-            <button class="btn">C<button class="optionbutton red2" onclick="red2()" >Computer Style Sheet    </button><br>
-            <button class="btn">D <button class="optionbutton green" onclick="green()" >Cascading Style Sheet</button><br>
+        <div class="choice">
+            <div class="option1" id="option">
+            <button class="btn op1" id="ol1" type="submit" onclick="red1()">A</button>
+            <button class="optionbutton red1" id="o1" type="submit" onclick="red1()" >Counter:Strike:Source </button><br>
+            </div>
+
+            <div class="option2" id="option">
+            <button class="btn op2" id="ol2" type="submit" onclick="red2()">B</button>
+            <button class="optionbutton red2" id="o2" type="submit" onclick="red2()" >Corrective Style Sheet</button><br>
+            </div>
+
+             <div class="option3" id="option">
+            <button class="btn op3" id="ol3" type="submit" onclick="red3()">C</button>
+            <button class="optionbutton red3" id="o3"type="submit" onclick="red3()" >Computer Style Sheet</button><br>
+             </div>
+
+              <div class="option4" id="option">
+            <button class="btn op4" id="ol4" type="submit" onclick="green()">D</button>
+            <button class="optionbutton green" id="o4" type="submit" onclick="green()" >Cascading Style Sheet</button><br>
+              </div>
         </div>
         
     </div>
     <script>
-        var message1=document.getElementsByClassName("optionbutton");
-        function red(){
-            document.getElementsByClassName("red")[0].style.backgroundColor="red";
-        }
-        var message2=document.getElementsByClassName("optionbutton");
         function red1(){
-            document.getElementsByClassName("red1")[1].style.backgroundColor="red";
+            document.querySelector("#ol1").style.backgroundColor='red';
+            document.querySelector("#o1").style.backgroundColor='red';
         }
-        var message3=document.getElementsByClassName("optionbutton");
-        function red2(){
-            document.getElementsByClassName("red2")[2].style.backgroundColor="red";
+        
+         function red2(){
+            document.querySelector("#ol2").style.backgroundColor='red';
+            document.querySelector("#o2").style.backgroundColor='red';
         }
-        var message4=document.getElementsByClassName("optionbutton");
+             function red3(){
+            document.querySelector("#ol3").style.backgroundColor='red';
+            document.querySelector("#o3").style.backgroundColor='red';
+        }
+
         function green(){
-            document.getElementsByClassName("green")[3].style.backgroundColor="green";
-        }
-    </script>
+    document.querySelector(".op4").style.backgroundColor='green';
+    document.querySelector(".op4").style.color='white';
+    document.querySelector(".green").style.backgroundColor='green';
+    document.querySelector(".green").style.color='white';
+}
+</script>
 </body>
 </html>
+
+
 
 
 
